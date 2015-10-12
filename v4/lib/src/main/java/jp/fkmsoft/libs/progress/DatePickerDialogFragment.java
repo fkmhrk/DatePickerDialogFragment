@@ -46,7 +46,7 @@ public class DatePickerDialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         Activity activity = getActivity();
-        if (activity == null) { return null; }
+        if (activity == null) { return super.onCreateDialog(savedInstanceState); }
 
         Bundle args = getArguments();
         String title = args.getString(ARGS_TITLE);
