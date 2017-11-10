@@ -49,6 +49,7 @@ public class DatePickerDialogFragment extends DialogFragment {
         if (activity == null) { return super.onCreateDialog(savedInstanceState); }
 
         Bundle args = getArguments();
+        assert args != null;
         String title = args.getString(ARGS_TITLE);
         int year = args.getInt(ARGS_YEAR);
         int month = args.getInt(ARGS_MONTH);
@@ -68,6 +69,7 @@ public class DatePickerDialogFragment extends DialogFragment {
         if (target == null) { return; }
 
         Bundle args = getArguments();
+        assert args != null;
         Bundle extra = args.getBundle(ARGS_EXTRA);
 
         Intent data = new Intent();
@@ -83,6 +85,7 @@ public class DatePickerDialogFragment extends DialogFragment {
             if (target == null) { return; }
 
             Bundle args = getArguments();
+            assert args != null;
             Bundle extra = args.getBundle(ARGS_EXTRA);
 
             Intent data = new Intent();
